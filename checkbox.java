@@ -21,10 +21,10 @@ public class checkbox {
 	//	   DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 	//	   capabilities.setCapability("marionette",true);
 		   WebDriver driver = new ChromeDriver();
-		   driver.get("https://www.flipkart.com/mobiles/mi~brand/pr?sid=tyy%2C4io&otracker=nmenu_sub_Electronics_0_Mi&sort=price_asc");
+		   driver.get("https://www.pepperfry.com/?gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlNr0YhjV3FKlAlcyLaVx3m3W_W0pxNwYk6fAyfqzLbAuzwoRofsDUQaAvylEALw_wcB");
 		   driver.manage().window().maximize();
 		   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	       WebElement Chkbox = driver.findElement(By.xpath("/html/body/div/div/div[3]/div[2]/div[1]/div[1]/div/div[1]/div/section[3]/div[1]/label/div[1]"));
+	       WebElement Chkbox = driver.findElement(By.xpath("/html/body/div[5]/div/div[1]/div/div[2]/div[2]/form/div[2]/div[4]/div/div/label"));
 	       Chkbox.click();
 	      
 	       }

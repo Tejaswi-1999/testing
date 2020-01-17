@@ -21,9 +21,9 @@ public class selwebdriver {
 		   WebDriver driver = new ChromeDriver();
 		   
 		   
-		   driver.get("https://www.wattpad.com/stories/India?utm_expid=.OunQAtEoR3K3TJW2yzcg6w.1&utm_referrer=https%3A%2F%2Fwww.google.com%2F");
+		   driver.get("https://www.pepperfry.com/?gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlNr0YhjV3FKlAlcyLaVx3m3W_W0pxNwYk6fAyfqzLbAuzwoRofsDUQaAvylEALw_wcB");
     	
-	       driver.findElement(By.id("search-query")).sendKeys("mythology");
+	       driver.findElement(By.id("search")).sendKeys("Recliners");
 	
 	}
 

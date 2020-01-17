@@ -22,11 +22,11 @@ public class Dropdown {
 	//	   DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 	//	   capabilities.setCapability("marionette",true);
 		   WebDriver driver = new ChromeDriver();
-		   driver.get("https://accounts.snapchat.com/accounts/signup?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome");
-		   Select drpmonth = new Select(driver.findElement(By.xpath("/html/body/div[1]/div/div/div[3]/div[1]/div[1]/div/div/div[4]/div/form/div[5]/div/div/div/div[1]/div/div/select")));
-	       drpmonth.selectByVisibleText("May");
-	 
-	 
+		   driver.get("https://www.pepperfry.com/bed-bath-pillows.html?type=homepage_banner4");
+		   driver.manage().window().maximize();
+		   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		   Select drpsort = new Select(driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div[5]/div[2]/div/div[2]/div/div[2]/div/div[2]/ul/li")));
+	       drpsort.selectByVisibleText("NEWEST");
 	       }
 	}
 

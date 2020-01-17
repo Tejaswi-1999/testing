@@ -1,5 +1,6 @@
 package com.deloitte.selenium;
 
+
 import java.io.IOException;
 import java.sql.Driver;
 import java.util.concurrent.TimeUnit;
@@ -21,8 +22,10 @@ public class linktext {
 	//	   DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 	//	   capabilities.setCapability("marionette",true);
 		   WebDriver driver = new ChromeDriver();
-		   driver.get("https://api.jquery.com/");
-		   WebElement linktext = driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div[1]/ul/li[1]/a"));
+		   driver.get("https://www.pepperfry.com/furniture-bedroom-furniture.html?type=hover-bedroom");
+		   driver.manage().window().maximize();
+		   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		   WebElement linktext = driver.findElement(By.xpath("/html/body/div[2]/header/div[3]/div/div[1]/div/div/div/div[1]/ul/li[1]"));
 		   linktext.click();
 		   
 	 
@@ -30,5 +33,12 @@ public class linktext {
 	 
 	       }
 	}
+
+
+
+	 
+	 
+	 
+	       
 
 
